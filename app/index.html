@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Leonida Trophy Guide — GTA VI · all 55 trophies</title>
+<link rel="icon" href="data:,">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header id="top">
+  <div class="brand">
+    <h1>LEONIDA TROPHY GUIDE</h1>
+    <p class="subtitle">Grand Theft Auto VI · PlayStation 5 · 55 trophies — 1 platinum · 2 gold · 6 silver · 46 bronze · all offline, single-player · 28 hidden on PlayStation until earned</p>
+  </div>
+  <div class="progress" id="progressBlock">
+    <p class="progress-text" id="progressText">0 of 55 earned · 0%</p>
+    <div class="bar"><div class="fill" id="progressFill"></div></div>
+    <p class="progress-sub" id="progressSub">Platinum 0/1 · Gold 0/2 · Silver 0/6 · Bronze 0/46</p>
+  </div>
+</header>
+
+<nav class="toolbar" id="toolbar">
+  <input id="search" type="search" placeholder="Search a trophy, a mission, a place…" aria-label="Search trophies">
+  <label>Kind
+    <select id="kindFilter">
+      <option value="all">All kinds</option>
+      <option value="story">Story</option>
+      <option value="missable">Missable</option>
+      <option value="collectibles">Collectibles</option>
+      <option value="activities">Activities</option>
+      <option value="online">Online</option>
+    </select>
+  </label>
+  <label>Grade
+    <select id="gradeFilter">
+      <option value="all">All grades</option>
+      <option value="platinum">Platinum</option>
+      <option value="gold">Gold</option>
+      <option value="silver">Silver</option>
+      <option value="bronze">Bronze</option>
+    </select>
+  </label>
+  <label class="toggle"><input id="spoilerToggle" type="checkbox"> Spoiler-free mode</label>
+  <label class="toggle"><input id="hideEarned" type="checkbox"> Hide earned</label>
+  <button id="exportBtn" type="button">Export progress</button>
+  <label class="import">Import progress <input id="importFile" type="file" accept="application/json"></label>
+</nav>
+
+<div class="tabs" id="tabs">
+  <button id="tabChecklist" type="button" class="active">Checklist</button>
+  <button id="tabRoadmap" type="button">Roadmap to the Platinum</button>
+</div>
+
+<main>
+  <section id="checklistView">
+    <div class="layout">
+      <div class="list" id="trophyList"></div>
+      <aside class="detail" id="detailPane" aria-live="polite"></aside>
+    </div>
+  </section>
+  <section id="roadmapView" hidden>
+    <p class="roadmap-intro">One playthrough, about 200 hours, difficulty 4/10 (PowerPyx). No mission gold medals, no mission replay, nothing missable except one meditation spot in Chapter 1. Work the stages in order; the cleanup at the end is mostly counting what you already did.</p>
+    <div id="roadmapStages"></div>
+  </section>
+</main>
+
+<footer>
+  <p>Names and descriptions are the official PlayStation list (Exophase / PSNProfiles, 18 Nov 2026). Every guide is written in our own words and cites its sources beside it. Where no guide has pinned a step down yet, we say so plainly instead of inventing a location. This guide works offline from its own files and loads nothing over the network. No Rockstar Games logo or artwork is used.</p>
+  <p class="sources-line">Sources: the official trophy list on Exophase · PSNProfiles · PowerPyx GTA 6 Trophy Guide &amp; Roadmap · GTA Zone · Planet GTA 6.</p>
+</footer>
+<script type="module" src="app.js"></script>
+</body>
+</html>
